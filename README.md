@@ -23,6 +23,18 @@ __PolimiDL__ assumes that the model has already been trained in the framework of
 * [PolimiDL Converter](https://github.com/darianfrajberg/polimidl_converter) currently supports TensorFlow.
 * TODO add your converter if you write one.
 
+
+## Getting started with PolimiDL
+To clone the project:
+```shell
+git clone --recursive https://github.com/darianfrajberg/polimidl
+```
+
+To run the test:
+```shell
+./test.sh
+```
+
 ## Creating a Network
 __PolimiDL__ follows a _Code as Configuration_ pattern.
 This enables the compiler to perform various optimizations during compilation, instead of runtime.
