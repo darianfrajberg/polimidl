@@ -20,9 +20,8 @@ __PolimiDL__ assumes that the model has already been trained in the framework of
 
 
 ## X to PolimiDL Converters
-Here is the list of available converters from existing traning framework to __PolimiDL__.
-
-__Coming Soon__
+* [PolimiDL Converter](https://github.com/darianfrajberg/polimidl_converter) currently supports TensorFlow.
+* TODO add your converter if you write one.
 
 ## Creating a Network
 __PolimiDL__ follows a _Code as Configuration_ pattern.
