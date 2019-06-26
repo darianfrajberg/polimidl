@@ -87,7 +87,7 @@ int main() {
 ```
 
 ### Use a Network as an Class member
-Network types are not meant to be explicitly typed, but thanks to C++ type deduction you don't have to, just use auto.
+Network types are not meant to be explicitly typed, but thanks to C++ type deduction you do not have to, just use auto.
 
 If you are using a network as a member of a class, you can use `decltype` to deduce the proper type:
 ```c++
@@ -403,6 +403,18 @@ In `polimidl/examples/mobilenet.hpp` there is an available pre-converted version
 If you use PolimiDL or wish to refer it, please use the following BibTex entry.
 
 ```
-__Coming Soon__
+@inproceedings{frajberg2019accelerating,
+title={Accelerating Deep Learning Inference on Mobile Systems},
+author={Frajberg, Darian and Bernaschina, Carlo and Marone, Christian and Fraternali, Piero},
+booktitle={International Conference on AI and Mobile Services},
+pages={118--134},
+year={2019},
+organization={Springer}
+}
 ```
+
+## Reference
+
+* [Accelerating Deep Learning Inference on Mobile Systems](https://link.springer.com/chapter/10.1007/978-3-030-23367-9_9). Darian Frajberg, Carlo Bernaschina, Christian Marone, Piero Fraternali.
+
 
