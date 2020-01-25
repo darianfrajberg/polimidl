@@ -129,7 +129,7 @@ The network will be created in a std::unique_ptr with the proper template argume
 // Include the layers you need
 #include <polimidl/layers/relu.hpp>
 
-class my_amazing_wita_a_network_inside {
+class my_amazing_with_a_network_inside {
  public:
   void lazy_initialize() {
     if (!network_) {
@@ -194,7 +194,7 @@ A new layer type is a class that inherits from `::polimidl::layers::layer<data_t
 ```c++
 #include <algorithm>
 
-#include <polimidl/layers/layer.hpp"
+#include <polimidl/layers/layer.hpp>
 
 template <typename type_t, typename components>
 class plus_one : public polimidl::layers::layer<type_t, components> {
@@ -218,7 +218,7 @@ Just set the third template parameter of `polimidl::layers::layer` to `true` and
 ```c++
 #include <algorithm>
 
-#include <polimidl/layers/layer.hpp"
+#include <polimidl/layers/layer.hpp>
 
 template <typename type_t, typename components>
 class plus_one : public polimidl::layers::layer<type_t, components, true> {
@@ -240,7 +240,7 @@ If your task can perform better if parallelized, you can easily split the work a
 ```c++
 #include <algorithm>
 
-#include <polimidl/layers/layer.hpp"
+#include <polimidl/layers/layer.hpp>
 
 template <typename type_t, typename components>
 class plus_one : public polimidl::layers::layer<type_t, components, true> {
@@ -279,7 +279,7 @@ You can override this behavior by implementing the `output_rows` and `output_col
 ```c++
 #include <algorithm>
 
-#include <polimidl/layers/layer.hpp"
+#include <polimidl/layers/layer.hpp>
 
 template <typename type_t, typename components, typename pooling>
 class pull_first : public polimidl::layers::layer<type_t, components> {
@@ -316,7 +316,7 @@ You can request a minimum amount of memory by implementing the `temporary_memory
 ```c++
 #include <algorithm>
 
-#include <polimidl/layers/layer.hpp"
+#include <polimidl/layers/layer.hpp>
 
 template <typename type_t, typename components>
 class plus_one : public polimidl::layers::layer<type_t, components> {
@@ -352,7 +352,7 @@ Just implement the `optimize_for` method and compute the parameters that can spe
 ```c++
 #include <algorithm>
 
-#include <polimidl/layers/layer.hpp"
+#include <polimidl/layers/layer.hpp>
 
 template <typename type_t, typename components>
 class plus_one : public polimidl::layers::layer<type_t, components, true> {
