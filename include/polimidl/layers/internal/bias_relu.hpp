@@ -31,7 +31,7 @@ class bias_relu : public layer<type_t, components, true> {
                          &input[components::value * (cell + 1)],
                          bias_,
                          &output[components::value * cell],
-                         [&](type_t value, type_t bias) {
+                         [=](type_t value, type_t bias) {
             return std::clamp(value + bias, min_, max_);
           });
         }
